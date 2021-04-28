@@ -1,3 +1,57 @@
 .home{
-    display: inline;
+    margin-left: 25%;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 50vw;
+    height: 95vh;
 }
+
+#level1{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
+#level2{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-left: 13%;
+}
+
+#level3{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-left: 3%;
+}
+
+#level4{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-left: 11%;
+}
+
+#level5{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-left: 33%;
+
+}
+
