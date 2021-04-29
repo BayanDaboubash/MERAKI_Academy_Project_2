@@ -15,3 +15,33 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
+$("#all").on("click", () => {
+  $(".home").css({
+    display: "block",
+  });
+  $(".albums").css({
+    display: "none",
+  });
+  $(".favourites").css({
+    display: "none",
+  });
+  $(".editPhoto").css({
+    display: "none",
+  });
+});
+
+$("#album").on("click", () => {
+    $(".home").css({
+      display: "none",
+    });
+    $(".albums").css({
+      display: "block",
+    });
+    $(".favourites").css({
+      display: "none",
+    });
+    $(".editPhoto").css({
+      display: "none",
+    });
+  });
+  

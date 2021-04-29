@@ -73,3 +73,19 @@ a{
     font-size: 25px;
     font-family:  monospace;
 }
+
+.shadow{
+    box-shadow: 0px 0px 20px white;
+}
+
+.albums{
+    display: none;
+}
+
+.favourites{
+    display: none;
+}
+
+.editPhoto{
+    display: none;
+}
