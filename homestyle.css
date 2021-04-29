@@ -35,3 +35,29 @@
   width: 100px;
   height: 100px;
 }
+
+#div1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:  monospace;
+    margin-left: 20px;
+    gap:25px;
+    display: flex;
+    float: right;
+}
+
+a:active{
+    color:orange;
+}
+
+a{
+    font-size: 20px;
+    font-family:  monospace;
+    color: rgba(158, 153, 153, 0.904);
+    text-decoration: none;
+}
+
+.navbar{
+    font-size: 25px;
+    font-family:  monospace;
+}
