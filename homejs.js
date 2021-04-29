@@ -16,32 +16,29 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 $("#all").on("click", () => {
-  $(".home").css({
-    display: "block",
-  });
-  $(".albums").css({
-    display: "none",
-  });
-  $(".favourites").css({
-    display: "none",
-  });
-  $(".editPhoto").css({
-    display: "none",
-  });
+  $(".home").show();
+  $(".albums").hide();
+  $(".favourites").hide();
+  $(".editPhoto").hide();
 });
 
 $("#album").on("click", () => {
-    $(".home").css({
-      display: "none",
-    });
-    $(".albums").css({
-      display: "block",
-    });
-    $(".favourites").css({
-      display: "none",
-    });
-    $(".editPhoto").css({
-      display: "none",
-    });
-  });
-  
+  $(".home").hide();
+  $(".albums").show();
+  $(".favourites").hide();
+  $(".editPhoto").hide();
+});
+
+$("#favourite").on("click", () => {
+  $(".home").hide();
+  $(".albums").hide();
+  $(".favourites").show();
+  $(".editPhoto").hide();
+});
+
+$("#edit").on("click", () => {
+  $(".home").hide();
+  $(".albums").hide();
+  $(".favourites").hide();
+  $(".editPhoto").show();
+});
