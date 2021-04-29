@@ -1,57 +1,37 @@
-.home{
-    margin-left: 25%;
-    display: block;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid black;
-    width: 50vw;
-    height: 95vh;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-#level1{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    margin-left: 35%;
-    margin-top: 1%;
+.home {
+  margin-left: 25%;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+  width: 50vw;
+  height: 95vh;
 }
 
-#level2{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    margin-left: 13%;
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-#level3{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    margin-left: 3%;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
-#level4{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    margin-left: 11%;
+#level1 {
+  width: 100px;
+  height: 100px;
 }
 
-#level5{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    gap: 10px;
-    margin-left: 33%;
-
+#level2 {
+  width: 100px;
+  height: 100px;
 }
-
