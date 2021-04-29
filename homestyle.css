@@ -3,12 +3,21 @@
   margin: 0;
 }
 
+body{
+    background-image: url("./background.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .home {
   margin-left: 25%;
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid black;
+  border: 1px solid transparent;
   width: 50vw;
   height: 95vh;
 }
