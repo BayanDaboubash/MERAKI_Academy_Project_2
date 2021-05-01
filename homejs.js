@@ -8,6 +8,8 @@ let swiper = new Swiper(".swiper-container", {
   },
 });
 
+$("#thank").hide();
+
 $("#All").on("click", () => {
   let value = "All";
   $(".item").show("1000");
@@ -115,6 +117,7 @@ $("#all").on("click", () => {
   $(".albums").hide();
   $(".favourites").hide();
   $(".editPhoto").hide();
+  $("#thank").hide();
 });
 
 $("#album").on("click", () => {
@@ -122,6 +125,7 @@ $("#album").on("click", () => {
   $(".albums").show();
   $(".favourites").hide();
   $(".editPhoto").hide();
+  $("#thank").hide();
   $("#All").css({
     "background-color": "orange",
   });
@@ -132,6 +136,7 @@ $("#favourite").on("click", () => {
   $(".albums").hide();
   $(".favourites").show();
   $(".editPhoto").hide();
+  $("#thank").hide();
 });
 
 $("#edit").on("click", () => {
@@ -139,6 +144,7 @@ $("#edit").on("click", () => {
   $(".albums").hide();
   $(".favourites").hide();
   $(".editPhoto").show();
+  $("#thank").hide();
 });
 
 const array = [];
@@ -166,10 +172,9 @@ $("#favourite").on("click", () => {
 });
 
 $("#add").on("click", () => {
+  $("#thank").show();
   const urlPhoto = $("#urlImage").val();
   // const nameAlbums = $("nameAlbum").val();
-  $("#addPhoto").append(
-    `<img src="${urlPhoto}" />`
-  );
+  $("#addPhoto").append(`<img src="${urlPhoto}" />`);
   $("#addPhoto").addClass($("nameAlbum").val());
 });

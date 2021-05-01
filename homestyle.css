@@ -170,3 +170,13 @@ button{
   height: 150px;
   margin: 5px;
 }
+
+.thankAdd{
+  padding: 0;
+  margin-top: 3%;
+  margin-left: 42%;
+  width: 17%;
+  height: 13%;
+  background-color:rgb(224, 222, 222);
+  border-radius: 50px;
+}
