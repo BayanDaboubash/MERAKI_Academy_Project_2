@@ -156,8 +156,7 @@ const array = [];
 // });
 
 $(".photo .item").on("dblclick", (e) => {
-  let a = e.target;
-  array.push(a);
+  array.push(e.target);
 });
 
 $("#favourite").on("click", () => {
