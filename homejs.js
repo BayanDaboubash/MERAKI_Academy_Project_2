@@ -91,9 +91,6 @@ $("#Bird").on("click", () => {
   });
 });
 
-
-
-
 // $(document).ready(()=>{
 //   $("#All").on("click",()=>{
 //     let value ="All";
@@ -158,14 +155,13 @@ const array = [];
 //   let a = $("#a2").attr('src');
 // });
 
-$('.photo .item').on('dblclick', (e) => {
+$(".photo .item").on("dblclick", (e) => {
   let a = e.target;
   array.push(a);
-})
+});
 
-$("#favourite").on("click",()=>{
+$("#favourite").on("click", () => {
   array.forEach(function (element, index) {
     $(".favourites").append(element);
   });
-})
-
+});

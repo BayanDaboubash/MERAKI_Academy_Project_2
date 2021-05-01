@@ -129,3 +129,11 @@ section>ul>li{
   gap: 3%;
   flex-wrap: wrap;
 }
+
+
+.massege{
+  color: rgb(224, 222, 222);
+  padding: 1%;
+  font-size: 25px;
+  font-family:  monospace;
+}
