@@ -9,8 +9,9 @@ let swiper = new Swiper(".swiper-container", {
 });
 
 $(document).ready(()=>{
-  $(".list").on("click",()=>{
-    let value = $(this).attr('data-filter');
+  $(".list li").on("click",()=>{
+    let value = $(this).text();
+    console.log(value);
     if (value == "All"){
       $(".item").show('1000');
     }
@@ -57,7 +58,6 @@ $("#edit").on("click", () => {
 const array = [];
 
 $("img").on("dblclick",()=>{
-  array.push($(this))
+  array.push($(this.id))
 })
 
-$(".favourites").append(array[0]);
