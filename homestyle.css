@@ -133,7 +133,8 @@ section>ul>li{
 
 .massege{
   color: rgb(224, 222, 222);
-  padding: 1%;
+  text-align: center;
+  align-items: center;
   font-size: 25px;
   font-family:  monospace;
 }
