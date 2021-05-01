@@ -82,9 +82,9 @@ span{
 }
 
 section{
-  padding: 20px;
+  padding: 2%;
   width: 90%;
-  margin: 10px auto;
+  margin: 2% auto;
 }
 
 section>ul{
@@ -95,8 +95,8 @@ section>ul{
 section>ul>li{
   list-style: none;
   background-color: rgb(238, 238, 238);
-  padding: 8px 20px;
-  margin: 5px;
+  padding: 1% 3%;
+  margin: 1%;
   letter-spacing: 1px;
   cursor: pointer;
   border-radius: 50px;
