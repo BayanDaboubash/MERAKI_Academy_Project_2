@@ -8,6 +8,24 @@ let swiper = new Swiper(".swiper-container", {
   },
 });
 
+$(document).ready(()=>{
+  $(".list").on("click",()=>{
+    const value = $(this).attr('data-filter');
+    if (value == "All"){
+      $(".item").show('1000');
+    }
+    else{
+      $(".item").filter(value).show('1000');
+      $(".item").not(value).hide('1000');
+    }
+  })
+
+  $(".list").on("click", ()=>{
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+})
+
+
 $("#all").on("click", () => {
   $(".home").show();
   $(".albums").hide();
@@ -36,15 +54,3 @@ $("#edit").on("click", () => {
   $(".editPhoto").show();
 });
 
-$(document).ready(()=>{
-  $(".list").on("click",()=>{
-    const value = $(this).attr("data-filter");
-    if (value == "All"){
-      $(".item").show('1000');
-    }
-    else{
-      $(".item").not(""+value).hide('1000');
-      $(".item").filter(""+value).show('1000');
-    }
-  })
-})
