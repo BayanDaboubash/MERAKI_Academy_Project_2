@@ -159,12 +159,14 @@ const array = [];
 // });
 
 $('.photo .item').on('dblclick', (e) => {
-  $(".favourites").append(e.target);
+  let a = e.target;
+  array.push(a);
 })
 
-// $("#favourite").on("click",()=>{
-//   array.forEach(function (element, index) {
-//     $(".favourites").append(element);
-//   });
-// })
+$("#favourite").on("click",()=>{
+  array.forEach(function (element, index) {
+    $(".favourites").append(element);
+    $(".photo").append(element);
+  });
+})
 
