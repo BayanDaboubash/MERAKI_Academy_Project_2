@@ -102,9 +102,6 @@ section>ul>li{
   border-radius: 50px;
 }
 
-.active{
-  background-color: orange;
-}
 
 .photo{
   display: flex;
@@ -122,3 +119,4 @@ section>ul>li{
   height: 150px;
   margin: 5px;
 }
+
