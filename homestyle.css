@@ -120,3 +120,12 @@ section>ul>li{
   margin: 5px;
 }
 
+.favourites{
+  padding: 2%;
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 3%;
+  flex-wrap: wrap;
+}
