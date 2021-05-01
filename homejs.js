@@ -165,5 +165,7 @@ $("#favourite").on("click", () => {
   });
 });
 
+
 const urlPhoto = $("#urlImage").val();
 const nameAlbums = $("nameAlbum").val();
+$(".albums").append(`<div class="item ${nameAlbums}" value="${nameAlbums}"><img src="./${urlPhoto}" /></div>`);
