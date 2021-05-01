@@ -138,3 +138,19 @@ section>ul>li{
   font-size: 25px;
   font-family:  monospace;
 }
+
+input{
+  margin: 5%;
+  padding: 1%;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+button{
+  padding: 1%;
+  font-size: 15px;
+  border-radius: 50px;
+  color: orange;
+  font-weight: bold;
+  background-color: rgba(158, 153, 153, 0.904);
+}
