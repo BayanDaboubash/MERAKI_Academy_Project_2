@@ -166,7 +166,6 @@ $('.photo .item').on('dblclick', (e) => {
 $("#favourite").on("click",()=>{
   array.forEach(function (element, index) {
     $(".favourites").append(element);
-    $(".photo").append(element);
   });
 })
 
