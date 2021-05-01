@@ -15,8 +15,8 @@ $(document).ready(()=>{
       $(".item").show('1000');
     }
     else{
-      $(".item").filter("."+value).show('1000');
-      $(".item").not("."+value).hide('1000');
+      $(".item").filter(value).show('1000');
+      $(".item").not(value).hide('1000');
     }
   })
 
@@ -54,3 +54,10 @@ $("#edit").on("click", () => {
   $(".editPhoto").show();
 });
 
+const array = [];
+
+$("img").on("dblclick",()=>{
+  array.push($(this))
+})
+
+$(".favourites").append(array[0]);
