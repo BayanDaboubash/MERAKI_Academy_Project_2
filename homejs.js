@@ -164,3 +164,6 @@ $("#favourite").on("click", () => {
     $(".favourites").append(element);
   });
 });
+
+
+$("#blah").attr("src", e.target.result).width(150).height(150);
