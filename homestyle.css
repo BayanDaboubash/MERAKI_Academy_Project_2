@@ -140,17 +140,24 @@ section>ul>li{
 }
 
 input{
-  margin: 5%;
+  margin-top: 2%;
   padding: 1%;
   border-radius: 50px;
   font-size: 15px;
 }
 
 button{
+  margin-top: 2%;
   padding: 1%;
   font-size: 15px;
   border-radius: 50px;
   color: orange;
   font-weight: bold;
   background-color: rgba(158, 153, 153, 0.904);
+}
+
+.editPhoto{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

@@ -165,5 +165,5 @@ $("#favourite").on("click", () => {
   });
 });
 
-
-$("#blah").attr("src", e.target.result).width(150).height(150);
+const urlPhoto = $("#urlImage").val();
+const nameAlbums = $("nameAlbum").val();
