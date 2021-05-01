@@ -161,3 +161,12 @@ button{
   align-items: center;
   justify-content: center;
 }
+
+#addPhoto{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}

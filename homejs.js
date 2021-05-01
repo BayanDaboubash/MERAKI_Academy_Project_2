@@ -167,8 +167,9 @@ $("#favourite").on("click", () => {
 
 $("#add").on("click", () => {
   const urlPhoto = $("#urlImage").val();
-  const nameAlbums = $("nameAlbum").val();
-  $(".albums").append(
-    `<div class="item ${nameAlbums}" value="${nameAlbums}"><img src="${urlPhoto}" /></div>`
+  // const nameAlbums = $("nameAlbum").val();
+  $("#addPhoto").append(
+    `<img src="${urlPhoto}" />`
   );
+  $("#addPhoto").addClass($("nameAlbum").val());
 });
