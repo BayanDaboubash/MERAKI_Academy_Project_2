@@ -8,77 +8,88 @@ let swiper = new Swiper(".swiper-container", {
   },
 });
 
-  $("#All").on("click", () => {
-    let value = "All";
-    $(".item").show("1000");
-    $("#All").css({
-      "background-color": "orange",
-    })
-    $("#Cat").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Flower").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Bird").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
+$("#All").on("click", () => {
+  let value = "All";
+  $(".item").show("1000");
+  $("#All").css({
+    "background-color": "orange",
   });
-
-  $("#Cat").on("click", () => {
-    let value = "Cat";
-    $(".item").filter("."+value).show('1000');
-    $(".item").not("."+value).hide('1000');
-    $("#All").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Cat").css({
-      "background-color": "orange",
-    })
-    $("#Flower").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Bird").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
+  $("#Cat").css({
+    "background-color": "rgb(238, 238, 238)",
   });
-
-  $("#Flower").on("click", () => {
-    let value = "Flower";
-    $(".item").filter("."+value).show('1000');
-    $(".item").not("."+value).hide('1000');
-    $("#All").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Cat").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Flower").css({
-      "background-color": "orange",
-    })
-    $("#Bird").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
+  $("#Flower").css({
+    "background-color": "rgb(238, 238, 238)",
   });
-
-  $("#Bird").on("click", () => {
-    let value = "Bird";
-    $(".item").filter("."+value).show('1000');
-    $(".item").not("."+value).hide('1000');
-    $("#All").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Cat").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Flower").css({
-      "background-color": "rgb(238, 238, 238)",
-    })
-    $("#Bird").css({
-      "background-color": "orange",
-    })
+  $("#Bird").css({
+    "background-color": "rgb(238, 238, 238)",
   });
+});
 
+$("#Cat").on("click", () => {
+  let value = "Cat";
+  $(".item")
+    .filter("." + value)
+    .show("1000");
+  $(".item")
+    .not("." + value)
+    .hide("1000");
+  $("#All").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Cat").css({
+    "background-color": "orange",
+  });
+  $("#Flower").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Bird").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+});
+
+$("#Flower").on("click", () => {
+  let value = "Flower";
+  $(".item")
+    .filter("." + value)
+    .show("1000");
+  $(".item")
+    .not("." + value)
+    .hide("1000");
+  $("#All").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Cat").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Flower").css({
+    "background-color": "orange",
+  });
+  $("#Bird").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+});
+
+$("#Bird").on("click", () => {
+  let value = "Bird";
+  $(".item")
+    .filter("." + value)
+    .show("1000");
+  $(".item")
+    .not("." + value)
+    .hide("1000");
+  $("#All").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Cat").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Flower").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Bird").css({
+    "background-color": "orange",
+  });
+});
 
 // $(document).ready(()=>{
 //   $("#All").on("click",()=>{
@@ -111,6 +122,9 @@ $("#album").on("click", () => {
   $(".albums").show();
   $(".favourites").hide();
   $(".editPhoto").hide();
+  $("#All").css({
+    "background-color": "orange",
+  });
 });
 
 $("#favourite").on("click", () => {
@@ -127,10 +141,16 @@ $("#edit").on("click", () => {
   $(".editPhoto").show();
 });
 
-// const array = [];
-// let a=1;
-// $(".favourites").html("<img src='1.jpg'");
+const array = [];
+// let a = 1;
+// $(".favourites").html(`<img src='${a}.jpg' >`);
 
-// $("img").on("dblclick", () => {
-//   $(".favourites").append($())
-// });
+$("#a1").on("dblclick", () => {
+  let a = $("#a1").attr('src');
+  $(".favourites").html(`<img src='1.jpg' >`);
+});
+
+$("#a2").on("dblclick", () => {
+  let a = $("#a2").attr('src');
+  $(".favourites").html(`<img src='41.jpg' >`);
+});
