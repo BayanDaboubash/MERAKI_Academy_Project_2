@@ -148,8 +148,18 @@ $("#album").on("click", () => {
   $(".favourites").hide();
   $(".editPhoto").hide();
   $("#thank").hide();
+  $(".item").show();
   $("#All").css({
     "background-color": "orange",
+  });
+  $("#Cat").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Flower").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Bird").css({
+    "background-color": "rgb(238, 238, 238)",
   });
 });
 
