@@ -166,13 +166,14 @@ const array = [];
 // });
 
 $(".photo .item").on("dblclick", (e) => {
-  let a = e.target;
+  let a = (e.target.src);
   array.push(a)
 });
 
 $("#favourite").on("click", () => {
+  $(".favourites").html("");
   array.forEach(function (element, index) {
-    $(".favourites").append(element);
+    $(".favourites").append(`<img src=${element} >`);
   });
 });
 
