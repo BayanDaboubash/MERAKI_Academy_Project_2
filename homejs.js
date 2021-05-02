@@ -4,7 +4,7 @@ $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
 
-const photoArray = [
+const photoArray = JSON.parse(localStorage.getItem("photoArray")) || [
   "src='./1.jpg' class='item Cat'",
   "src='./41.jpg' class='item Flower'",
   "src='./21.jpg' class='item Bird'",
@@ -82,6 +82,7 @@ $("#add").on("click", () => {
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
   photoArray.push(`src='${urlPhoto}' class='item ${nameAlbumNew}'`)
+  localStorage.setItem("photoArray", JSON.stringify(photoArray));
 });
 
 let swiper = new Swiper(".swiper-container", {
