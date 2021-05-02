@@ -4,6 +4,18 @@ $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
 
+let nameAlbum = "";
+
+if ($("#Cat1").checked){
+  nameAlbum = "Cat";
+}
+if ($("#Bird1").checked){
+  nameAlbum = "Bird";
+}
+if ($("#Flower1").checked){
+  nameAlbum = "Flower";
+}
+
 let swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   centeredSlides: true,
@@ -182,5 +194,12 @@ $("#add").on("click", () => {
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
   $(".photo").append(`<div> <img src="${urlPhoto}" /> </div>`);
-  $(".photo div").addClass(`item ${$("nameAlbum").val()}`);
+  $(".photo div").addClass(`item ${nameAlbum}`);
 });
+
+
+// easy.checked
+// Cat
+// Bird
+// Flower
+

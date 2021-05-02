@@ -179,3 +179,8 @@ button{
   background-color:rgb(224, 222, 222);
   border-radius: 50px;
 }
+
+#chooseAlbum{
+  width: 30%;
+  height: 20%;
+}
