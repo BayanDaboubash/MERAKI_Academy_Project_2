@@ -181,7 +181,6 @@ $("#favourite").on("click", () => {
 $("#add").on("click", () => {
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
-  // const nameAlbums = $("nameAlbum").val();
   $(".photo").append(`<div> <img src="${urlPhoto}" /> </div>`);
   $(".photo div").addClass(`item ${$("nameAlbum").val()}`);
 });
