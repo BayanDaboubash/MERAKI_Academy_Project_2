@@ -4,17 +4,23 @@ $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
 
-let nameAlbum = "";
+let nameAlbumNew = "";
 
-if ($("#Cat1").checked){
-  nameAlbum = "Cat";
-}
-if ($("#Bird1").checked){
-  nameAlbum = "Bird";
-}
-if ($("#Flower1").checked){
-  nameAlbum = "Flower";
-}
+$("#add").on("click", () => {
+  if ($("#Cat1").checked){
+    nameAlbumNew = "Cat";
+  }
+  if ($("#Bird1").checked){
+    nameAlbumNew = "Bird";
+  }
+  if ($("#Flower1").checked){
+    nameAlbumNew = "Flower";
+  }
+  $("#thank").show();
+  const urlPhoto = $("#urlImage").val();
+  $(".photo").append(`<div> <img src="${urlPhoto}" /> </div>`);
+  $(".photo div").addClass(`item ${nameAlbumNew}`);
+});
 
 let swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
@@ -189,17 +195,3 @@ $("#favourite").on("click", () => {
     $(".favourites img").addClass("item");
   });
 });
-
-$("#add").on("click", () => {
-  $("#thank").show();
-  const urlPhoto = $("#urlImage").val();
-  $(".photo").append(`<div> <img src="${urlPhoto}" /> </div>`);
-  $(".photo div").addClass(`item ${nameAlbum}`);
-});
-
-
-// easy.checked
-// Cat
-// Bird
-// Flower
-
