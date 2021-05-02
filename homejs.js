@@ -174,6 +174,7 @@ $("#favourite").on("click", () => {
   $(".favourites").html("");
   array.forEach(function (element, index) {
     $(".favourites").append(`<img src=${element} >`);
+    $(".favourites img").addClass("item");
   });
 });
 
