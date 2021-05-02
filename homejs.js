@@ -179,7 +179,7 @@ $("#edit").on("click", () => {
   $("#thank").hide();
 });
 
-const array = [];
+const array = JSON.parse(localStorage.getItem("arrayFav")) || [];
 // let a = 1;
 // $(".favourites").html(`<img src='${a}.jpg' >`);
 
@@ -196,12 +196,16 @@ const array = [];
 $(".photo .item").on("dblclick", (e) => {
   let a = (e.target.src);
   array.push(a)
+  localStorage.setItem("arrayFav",JSON.stringify(array))
 });
 
 $("#favourite").on("click", () => {
   $(".favourites").html("");
+  console.log(array);
   array.forEach(function (element, index) {
     $(".favourites").append(`<img src=${element} >`);
     $(".favourites img").addClass("item");
   });
 });
+
+//localStorage.removeItem("arrayFav")
