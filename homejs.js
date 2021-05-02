@@ -4,22 +4,84 @@ $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
 
+const photoArray = [
+  "src='./1.jpg' class='item Cat'",
+  "src='./41.jpg' class='item Flower'",
+  "src='./21.jpg' class='item Bird'",
+  "src='./2.jpg' class='item Cat'",
+  "src='./42.jpg' class='item Flower'",
+  "src='./22.jpg' class='item Bird'",
+  "src='./3.jpg' class='item Cat'",
+  "src='./43.jpg' class='item Flower'",
+  "src='./23.jpg' class='item Bird'",
+  "src='./4.jpg' class='item Cat'",
+  "src='./44.jpg' class='item Flower'",
+  "src='./24.jpg' class='item Bird'",
+  "src='./5.jpg' class='item Cat'",
+  "src='./45.jpg' class='item Flower'",
+  "src='./25.jpg' class='item Bird'",
+  "src='./6.jpg' class='item Cat'",
+  "src='./46.jpg' class='item Flower'",
+  "src='./26.jpg' class='item Bird'",
+  "src='./7.jpg' class='item Cat'",
+  "src='./47.jpg' class='item Flower'",
+  "src='./27.jpg' class='item Bird'",
+  "src='./8.jpg' class='item Cat'",
+  "src='./48.jpg' class='item Flower'",
+  "src='./28.jpg' class='item Bird'",
+  "src='./9.jpg' class='item Cat'",
+  "src='./49.jpg' class='item Flower'",
+  "src='./29.jpg' class='item Bird'",
+  "src='./10.jpg' class='item Cat'",
+  "src='./50.jpg' class='item Flower'",
+  "src='./30.jpg' class='item Bird'",
+  "src='./11.jpg' class='item Cat'",
+  "src='./51.jpg' class='item Flower'",
+  "src='./31.jpg' class='item Bird'",
+  "src='./12.jpg' class='item Cat'",
+  "src='./52.jpg' class='item Flower'",
+  "src='./32.jpg' class='item Bird'",
+  "src='./13.jpg' class='item Cat'",
+  "src='./53.jpg' class='item Flower'",
+  "src='./33.jpg' class='item Bird'",
+  "src='./14.jpg' class='item Cat'",
+  "src='./54.jpg' class='item Flower'",
+  "src='./34.jpg' class='item Bird'",
+  "src='./15.jpg' class='item Cat'",
+  "src='./55.jpg' class='item Flower'",
+  "src='./35.jpg' class='item Bird'",
+  "src='./16.jpg' class='item Cat'",
+  "src='./56.jpg' class='item Flower'",
+  "src='./36.jpg' class='item Bird'",
+  "src='./17.jpg' class='item Cat'",
+  "src='./57.jpg' class='item Flower'",
+  "src='./37.jpg' class='item Bird'",
+  "src='./18.jpg' class='item Cat'",
+  "src='./58.jpg' class='item Flower'",
+  "src='./38.jpg' class='item Bird'",
+  "src='./19.jpg' class='item Cat'",
+  "src='./59.jpg' class='item Flower'",
+  "src='./39.jpg' class='item Bird'",
+  "src='./20.jpg' class='item Cat'",
+  "src='./60.jpg' class='item Flower'",
+  "src='./40.jpg' class='item Bird'",
+];
+
 let nameAlbumNew = "";
 
 $("#add").on("click", () => {
-  if ($("#Cat1").checked){
+  if ($("#Cat1").checked) {
     nameAlbumNew = "Cat";
   }
-  if ($("#Bird1").checked){
+  if ($("#Bird1").checked) {
     nameAlbumNew = "Bird";
   }
-  if ($("#Flower1").checked){
+  if ($("#Flower1").checked) {
     nameAlbumNew = "Flower";
   }
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
-  $(".photo").append(`<div> <img src="${urlPhoto}" /> </div>`);
-  $(".photo div").addClass(`item ${nameAlbumNew}`);
+  photoArray.push(`src='${urlPhoto}' class='item ${nameAlbumNew}'`)
 });
 
 let swiper = new Swiper(".swiper-container", {
@@ -194,14 +256,13 @@ const array = JSON.parse(localStorage.getItem("arrayFav")) || [];
 // });
 
 $(".photo .item").on("dblclick", (e) => {
-  let a = (e.target.src);
-  array.push(a)
-  localStorage.setItem("arrayFav",JSON.stringify(array))
+  let a = e.target.src;
+  array.push(a);
+  localStorage.setItem("arrayFav", JSON.stringify(array));
 });
 
 $("#favourite").on("click", () => {
   $(".favourites").html("");
-  console.log(array);
   array.forEach(function (element, index) {
     $(".favourites").append(`<img src=${element} >`);
     $(".favourites img").addClass("item");
@@ -209,3 +270,9 @@ $("#favourite").on("click", () => {
 });
 
 //localStorage.removeItem("arrayFav")
+$("#album").on("click", () => {
+  $(".photo").html("");
+  photoArray.forEach(function (element, index) {
+    $(".photo").append(`<img ${element} >`);
+  });
+});
