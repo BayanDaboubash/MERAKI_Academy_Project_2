@@ -1,3 +1,9 @@
+$(".home").show();
+$(".albums").hide();
+$(".favourites").hide();
+$(".editPhoto").hide();
+$("#thank").hide();
+
 let swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   centeredSlides: true,
@@ -7,8 +13,6 @@ let swiper = new Swiper(".swiper-container", {
     rotate: 60,
   },
 });
-
-$("#thank").hide();
 
 $("#All").on("click", () => {
   let value = "All";
@@ -162,7 +166,8 @@ const array = [];
 // });
 
 $(".photo .item").on("dblclick", (e) => {
-  array.push(e.target);
+  let a = e.target;
+  array.push(a)
 });
 
 $("#favourite").on("click", () => {
@@ -175,6 +180,6 @@ $("#add").on("click", () => {
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
   // const nameAlbums = $("nameAlbum").val();
-  $("#addPhoto").append(`<img src="${urlPhoto}" />`);
-  $("#addPhoto").addClass($("nameAlbum").val());
+  $(".photo").append(`<div> <img src="${urlPhoto}" /> </div>`);
+  $(".photo div").addClass(`item ${$("nameAlbum").val()}`);
 });
