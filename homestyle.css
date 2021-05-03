@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-body{
-    background-image: url("./background.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    position: relative;
+body {
+  background-image: url("./background.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .home {
@@ -35,68 +35,68 @@ body{
   height: 300px;
 }
 
-#level1 , #level2, 
-#level3, #level4,
+#level1,
+#level2,
+#level3,
+#level4,
 #level5 {
   width: 100px;
   height: 100px;
 }
 
-
-
-#div1{
-    font-size: 30px;
-    font-weight: bold;
-    font-family:  monospace;
-    margin-left: 20px;
-    gap:25px;
-    display: flex;
-    float: right;
+#div1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  margin-left: 20px;
+  gap: 25px;
+  display: flex;
+  float: right;
 }
 
-span:active{
-    color:orange;
+span:active {
+  color: orange;
 }
 
-span:hover{
-    text-shadow: 0 0 30px orange, 0 0 5px #030305;
+span:hover {
+  text-shadow: 0 0 30px orange, 0 0 5px #030305;
 }
 
-span{
-    font-size: 20px;
-    font-family:  monospace;
-    color: rgba(158, 153, 153, 0.904);
-    text-decoration: none;
-    cursor: pointer;
+span {
+  font-size: 20px;
+  font-family: monospace;
+  color: rgba(158, 153, 153, 0.904);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.navbar{
-    color: rgb(224, 222, 222);
-    padding: 1%;
-    font-size: 25px;
-    font-family:  monospace;
+.navbar {
+  color: rgb(224, 222, 222);
+  padding: 1%;
+  font-size: 25px;
+  font-family: monospace;
 }
 
-.shadow{
-    box-shadow: 0px 0px 20px white;
+.shadow {
+  box-shadow: 0px 0px 20px white;
 }
 
-section{
+section {
   padding: 2%;
   width: 90%;
   margin: 2% auto;
 }
 
-section>ul{
+section > ul {
   display: flex;
   margin-bottom: 10px;
 }
 
-section>ul>li{
+section > ul > li {
   text-align: center;
   list-style: none;
   background-color: rgb(238, 238, 238);
-  padding: 1% ;
+  padding: 1%;
   margin: 1%;
   letter-spacing: 1px;
   cursor: pointer;
@@ -105,28 +105,28 @@ section>ul>li{
   font-weight: bolder;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-.photo{
+.photo {
   display: flex;
   flex-wrap: wrap;
 }
 
- img{
+img {
   width: 150px;
   height: 150px;
-} 
+}
 
-.item{
+.item {
   position: relative;
   width: 150px;
   height: 150px;
   margin: 5px;
 }
 
-.favourites{
+.favourites {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -136,29 +136,27 @@ input:focus{
   margin: 3rem auto 0;
 }
 
-
-.massege{
+.massege {
   margin-top: 3%;
   color: rgb(224, 222, 222);
   text-align: center;
   align-items: center;
   font-size: 25px;
-  font-family:  monospace;
+  font-family: monospace;
 }
-
 
 .photos {
   margin-top: 3rem;
 }
 
-input{
+input {
   margin-top: 1%;
   padding: 1%;
   border-radius: 50px;
   font-size: 15px;
 }
 
-button{
+button {
   width: 350px;
   margin-top: 1%;
   padding: 1%;
@@ -170,13 +168,13 @@ button{
   height: 50px;
 }
 
-.editPhoto{
+.editPhoto {
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-#addPhoto{
+#addPhoto {
   display: flex;
   flex-wrap: wrap;
   width: 150px;
@@ -184,17 +182,16 @@ button{
   margin: 5px;
 }
 
-.thankAdd{
+.thankAdd {
   padding: 0;
   margin-top: 3%;
   margin-left: 38.5%;
   width: 350px;
   height: 13%;
-  background-color:rgb(224, 222, 222);
+  background-color: rgb(224, 222, 222);
   border-radius: 50px;
   height: 50px;
 }
-
 
 .textTemplete {
   color: black;
@@ -210,20 +207,19 @@ button{
   height: 50px;
 }
 
-.big{
+.big {
   width: 400px;
   height: 400px;
   border-radius: 50px;
   margin-top: 5%;
-
 }
 
-#showPhotoBig{
+#showPhotoBig {
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-label{
+label {
   margin: 20px;
 }

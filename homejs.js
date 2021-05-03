@@ -4,16 +4,16 @@ $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
 $("#all").css({
-  "color": "orange",
+  color: "orange",
 });
 $("#album").css({
-  "color": "rgba(158, 153, 153, 0.904)",
+  color: "rgba(158, 153, 153, 0.904)",
 });
 $("#favourite").css({
-  "color": "rgba(158, 153, 153, 0.904)",
+  color: "rgba(158, 153, 153, 0.904)",
 });
 $("#edit").css({
-  "color": "rgba(158, 153, 153, 0.904)",
+  color: "rgba(158, 153, 153, 0.904)",
 });
 
 const photoArray = JSON.parse(localStorage.getItem("photoArray")) || [
@@ -81,7 +81,7 @@ const photoArray = JSON.parse(localStorage.getItem("photoArray")) || [
 
 let nameAlbumNew = "";
 $("#add").on("click", () => {
-  nameAlbumNew =$("input[name='nameAl']:checked").val();
+  nameAlbumNew = $("input[name='nameAl']:checked").val();
   console.log(nameAlbumNew);
   // if ($("#Cat1").checked) {
   //   nameAlbumNew = "Cat";
@@ -98,7 +98,7 @@ $("#add").on("click", () => {
   localStorage.setItem("photoArray", JSON.stringify(photoArray));
 });
 
-let options =  {
+let options = {
   effect: "coverflow",
   centeredSlides: true,
   loop: true,
@@ -106,9 +106,9 @@ let options =  {
   coverflowEffect: {
     rotate: 60,
   },
-}
+};
 
-let swiper = new Swiper(".swiper-container",options);
+let swiper = new Swiper(".swiper-container", options);
 
 $("#All").on("click", () => {
   let value = "All";
@@ -219,16 +219,16 @@ $("#all").on("click", () => {
   $(".editPhoto").hide();
   $("#thank").hide();
   $("#all").css({
-    "color": "orange",
+    color: "orange",
   });
   $("#album").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#favourite").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#edit").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
 });
 
@@ -240,16 +240,16 @@ $("#album").on("click", () => {
   $("#thank").hide();
   $(".item").show();
   $("#all").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#album").css({
-    "color": "orange",
+    color: "orange",
   });
   $("#favourite").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#edit").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
 });
 
@@ -260,16 +260,16 @@ $("#favourite").on("click", () => {
   $(".editPhoto").hide();
   $("#thank").hide();
   $("#all").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#album").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#favourite").css({
-    "color": "orange",
+    color: "orange",
   });
   $("#edit").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
 });
 
@@ -280,18 +280,18 @@ $("#edit").on("click", () => {
   $(".editPhoto").show();
   $("#thank").hide();
   $("#urlImage").val("");
-  $("input[type='radio']").prop("checked",false);
+  $("input[type='radio']").prop("checked", false);
   $("#all").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#album").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#favourite").css({
-    "color": "rgba(158, 153, 153, 0.904)",
+    color: "rgba(158, 153, 153, 0.904)",
   });
   $("#edit").css({
-    "color": "orange",
+    color: "orange",
   });
 });
 
@@ -316,11 +316,13 @@ $(".photo").on("dblclick", (e) => {
 });
 
 $("#favourite").on("click", () => {
-  $(".favourites").html("<h1 class='massege title'> The image can be delete to your favorites by double-clicking on it </h1>");
+  $(".favourites").html(
+    "<h1 class='massege title'> The image can be delete to your favorites by double-clicking on it </h1>"
+  );
   $(".favourites").append(`<div class='photos'></div>`);
   array.forEach(function (element, index) {
-    $(".photos").append(`<img src=${element} class="item" >`)    
-  })
+    $(".photos").append(`<img src=${element} class="item" >`);
+  });
 });
 
 //localStorage.removeItem("arrayFav")
@@ -336,54 +338,56 @@ $(".favourites").on("dblclick", (e) => {
   let num = array.indexOf(a);
   array.splice(num, 1);
   localStorage.setItem("arrayFav", JSON.stringify(array));
-  $(".favourites").html("<h1 class='massege title'> The image can be delete to your favorites by double-clicking on it </h1>");
+  $(".favourites").html(
+    "<h1 class='massege title'> The image can be delete to your favorites by double-clicking on it </h1>"
+  );
   $(".favourites").append(`<div class='photos'></div>`);
   array.forEach(function (element, index) {
-    $(".photos").append(`<img src=${element} class="item" >`)    
-  })
+    $(".photos").append(`<img src=${element} class="item" >`);
+  });
 });
 
-$("#level1 div").on("click", (e)=>{
+$("#level1 div").on("click", (e) => {
   $("#showPhotoBig").show();
-  $("#showPhotoBig").html("")
+  $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
-})
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+});
 
-$("#showPhotoBig").on("click", (e)=>{
+$("#showPhotoBig").on("click", (e) => {
   $(".home").show();
   $("#showPhotoBig").hide();
-})
+});
 
-$("#level2 div").on("click", (e)=>{
+$("#level2 div").on("click", (e) => {
   $("#showPhotoBig").show();
-  $("#showPhotoBig").html("")
+  $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
-})
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+});
 
-$("#level3 div").on("click", (e)=>{
+$("#level3 div").on("click", (e) => {
   $("#showPhotoBig").show();
-  $("#showPhotoBig").html("")
+  $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
-})
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+});
 
-$("#level4 div").on("click", (e)=>{
+$("#level4 div").on("click", (e) => {
   $("#showPhotoBig").show();
-  $("#showPhotoBig").html("")
+  $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
-})
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+});
 
-$("#level5 div").on("click", (e)=>{
+$("#level5 div").on("click", (e) => {
   $("#showPhotoBig").show();
-  $("#showPhotoBig").html("")
+  $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
-})
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+});
