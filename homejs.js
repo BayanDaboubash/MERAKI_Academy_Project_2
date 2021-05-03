@@ -68,17 +68,21 @@ const photoArray = JSON.parse(localStorage.getItem("photoArray")) || [
 ];
 
 let nameAlbumNew = "";
-
 $("#add").on("click", () => {
-  if ($("#Cat1").checked) {
-    nameAlbumNew = "Cat";
-  }
-  if ($("#Bird1").checked) {
-    nameAlbumNew = "Bird";
-  }
-  if ($("#Flower1").checked) {
-    nameAlbumNew = "Flower";
-  }
+  nameAlbumNew =$("input[name='nameAl']:checked").val();
+  console.log(nameAlbumNew);
+  // if ($("#Cat1").checked) {
+  //   nameAlbumNew = "Cat";
+  //   console.log(1);
+  // }
+  // if ($("#Bird1").checked) {
+  //   nameAlbumNew = "Bird";
+  //   console.log(2);
+  // }
+  // if ($("#Flower1").checked) {
+  //   nameAlbumNew = "Flower";
+  //   console.log(3);
+  // }
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
   photoArray.push(`src='${urlPhoto}' class='item ${nameAlbumNew}'`);
