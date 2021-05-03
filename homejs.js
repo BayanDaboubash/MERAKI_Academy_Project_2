@@ -294,3 +294,43 @@ $(".favourites").on("dblclick", (e) => {
     $(".photos").append(`<img src=${element} class="item" >`)    
   })
 });
+
+$("#level1 div").on("click", (e)=>{
+  $("#showPhotoBig").show();
+  $(".home").hide();
+  let a = e.target.src;
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
+})
+
+$("#showPhotoBig").on("click", (e)=>{
+  $(".home").show();
+  $("#showPhotoBig").hide();
+})
+
+$("#level2 div").on("click", (e)=>{
+  $("#showPhotoBig").show();
+  $(".home").hide();
+  let a = e.target.src;
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
+})
+
+$("#level3 div").on("click", (e)=>{
+  $("#showPhotoBig").show();
+  $(".home").hide();
+  let a = e.target.src;
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
+})
+
+$("#level4 div").on("click", (e)=>{
+  $("#showPhotoBig").show();
+  $(".home").hide();
+  let a = e.target.src;
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
+})
+
+$("#level5 div").on("click", (e)=>{
+  $("#showPhotoBig").show();
+  $(".home").hide();
+  let a = e.target.src;
+  $("#showPhotoBig").append(`<img src=${a} class="big" >`)
+})
