@@ -256,7 +256,7 @@ const array = JSON.parse(localStorage.getItem("arrayFav")) || [];
 //   let a = $("#a2").attr('src');
 // });
 
-$(".photo .item").on("dblclick", (e) => {
+$(".photo").on("dblclick", (e) => {
   let a = e.target.src;
   array.push(a);
   localStorage.setItem("arrayFav", JSON.stringify(array));
@@ -276,4 +276,11 @@ $("#album").on("click", () => {
   photoArray.forEach(function (element, index) {
     $(".photo").append(`<img ${element} >`);
   });
+});
+
+$(".favourites").on("dblclick", (e) => {
+  let a = e.target.src;
+  let num = array.indexOf(a);
+  array.splice(num , 1)
+  localStorage.setItem("arrayFav", JSON.stringify(array));
 });
