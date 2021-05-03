@@ -297,6 +297,7 @@ $(".favourites").on("dblclick", (e) => {
 
 $("#level1 div").on("click", (e)=>{
   $("#showPhotoBig").show();
+  $("#showPhotoBig").html("")
   $(".home").hide();
   let a = e.target.src;
   $("#showPhotoBig").append(`<img src=${a} class="big" >`)
@@ -309,6 +310,7 @@ $("#showPhotoBig").on("click", (e)=>{
 
 $("#level2 div").on("click", (e)=>{
   $("#showPhotoBig").show();
+  $("#showPhotoBig").html("")
   $(".home").hide();
   let a = e.target.src;
   $("#showPhotoBig").append(`<img src=${a} class="big" >`)
@@ -316,6 +318,7 @@ $("#level2 div").on("click", (e)=>{
 
 $("#level3 div").on("click", (e)=>{
   $("#showPhotoBig").show();
+  $("#showPhotoBig").html("")
   $(".home").hide();
   let a = e.target.src;
   $("#showPhotoBig").append(`<img src=${a} class="big" >`)
@@ -323,6 +326,7 @@ $("#level3 div").on("click", (e)=>{
 
 $("#level4 div").on("click", (e)=>{
   $("#showPhotoBig").show();
+  $("#showPhotoBig").html("")
   $(".home").hide();
   let a = e.target.src;
   $("#showPhotoBig").append(`<img src=${a} class="big" >`)
@@ -330,6 +334,7 @@ $("#level4 div").on("click", (e)=>{
 
 $("#level5 div").on("click", (e)=>{
   $("#showPhotoBig").show();
+  $("#showPhotoBig").html("")
   $(".home").hide();
   let a = e.target.src;
   $("#showPhotoBig").append(`<img src=${a} class="big" >`)

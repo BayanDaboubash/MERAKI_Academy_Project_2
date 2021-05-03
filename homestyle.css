@@ -198,8 +198,7 @@ button{
 }
 
 .big{
-  z-index: 1;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   border-radius: 50px;
 }
