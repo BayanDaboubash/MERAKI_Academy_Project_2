@@ -3,6 +3,7 @@ $(".albums").hide();
 $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
+$("#showPhotoBig").hide();
 $("#all").css({
   color: "orange",
 });
@@ -218,6 +219,7 @@ $("#all").on("click", () => {
   $(".favourites").hide();
   $(".editPhoto").hide();
   $("#thank").hide();
+  $("#showPhotoBig").hide();
   $("#all").css({
     color: "orange",
   });
@@ -239,6 +241,7 @@ $("#album").on("click", () => {
   $(".editPhoto").hide();
   $("#thank").hide();
   $(".item").show();
+  $("#showPhotoBig").hide();
   $("#all").css({
     color: "rgba(158, 153, 153, 0.904)",
   });
@@ -258,6 +261,7 @@ $("#favourite").on("click", () => {
   $(".albums").hide();
   $(".favourites").show();
   $(".editPhoto").hide();
+  $("#showPhotoBig").hide();
   $("#thank").hide();
   $("#all").css({
     color: "rgba(158, 153, 153, 0.904)",
@@ -278,6 +282,7 @@ $("#edit").on("click", () => {
   $(".albums").hide();
   $(".favourites").hide();
   $(".editPhoto").show();
+  $("#showPhotoBig").hide();
   $("#thank").hide();
   $("#urlImage").val("");
   $("input[type='radio']").prop("checked", false);
@@ -352,7 +357,7 @@ $("#level1 div").on("click", (e) => {
   $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+  $("#showPhotoBig").append(`<img src=${a} class="big" title="Click to revert the image to its previous size">`);
 });
 
 $("#showPhotoBig").on("click", (e) => {
@@ -365,7 +370,7 @@ $("#level2 div").on("click", (e) => {
   $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+  $("#showPhotoBig").append(`<img src=${a} class="big" title="Click to revert the image to its previous size">`);
 });
 
 $("#level3 div").on("click", (e) => {
@@ -373,7 +378,7 @@ $("#level3 div").on("click", (e) => {
   $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+  $("#showPhotoBig").append(`<img src=${a} class="big" title="Click to revert the image to its previous size">`);
 });
 
 $("#level4 div").on("click", (e) => {
@@ -381,7 +386,7 @@ $("#level4 div").on("click", (e) => {
   $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+  $("#showPhotoBig").append(`<img src=${a} class="big" title="Click to revert the image to its previous size">`);
 });
 
 $("#level5 div").on("click", (e) => {
@@ -389,7 +394,5 @@ $("#level5 div").on("click", (e) => {
   $("#showPhotoBig").html("");
   $(".home").hide();
   let a = e.target.src;
-  $("#showPhotoBig").append(`<img src=${a} class="big" >`);
+  $("#showPhotoBig").append(`<img src=${a} class="big" title="Click to revert the image to its previous size">`);
 });
-
-{/* <button style={background:url('heartBlack.png'); width:10px;} id='like${index}'> </button> */}

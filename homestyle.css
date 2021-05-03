@@ -229,3 +229,9 @@ label {
   opacity: 0.5;
   cursor: pointer;
 }
+
+.shadow:hover{
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
