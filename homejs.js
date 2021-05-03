@@ -81,7 +81,7 @@ $("#add").on("click", () => {
   }
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
-  photoArray.push(`src='${urlPhoto}' class='item ${nameAlbumNew}'`)
+  photoArray.push(`src='${urlPhoto}' class='item ${nameAlbumNew}'`);
   localStorage.setItem("photoArray", JSON.stringify(photoArray));
 });
 
@@ -281,6 +281,6 @@ $("#album").on("click", () => {
 $(".favourites").on("dblclick", (e) => {
   let a = e.target.src;
   let num = array.indexOf(a);
-  array.splice(num , 1)
+  array.splice(num, 1);
   localStorage.setItem("arrayFav", JSON.stringify(array));
 });
