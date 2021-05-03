@@ -246,6 +246,7 @@ $("#edit").on("click", () => {
   $(".favourites").hide();
   $(".editPhoto").show();
   $("#thank").hide();
+  $("#urlImage").val("");
 });
 
 const array = JSON.parse(localStorage.getItem("arrayFav")) || [];
