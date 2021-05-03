@@ -333,7 +333,7 @@ $("#album").on("click", () => {
   });
 });
 
-$(".favourites").on("dblclick", (e) => {
+$(".favourites").on("dblclick", (e) => { 
   let a = e.target.src;
   let num = array.indexOf(a);
   array.splice(num, 1);
