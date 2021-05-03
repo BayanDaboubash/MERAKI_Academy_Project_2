@@ -89,7 +89,7 @@ $("#add").on("click", () => {
   localStorage.setItem("photoArray", JSON.stringify(photoArray));
 });
 
-let swiper = new Swiper(".swiper-container", {
+let options =  {
   effect: "coverflow",
   centeredSlides: true,
   loop: true,
@@ -97,7 +97,9 @@ let swiper = new Swiper(".swiper-container", {
   coverflowEffect: {
     rotate: 60,
   },
-});
+}
+
+let swiper = new Swiper(".swiper-container",options);
 
 $("#All").on("click", () => {
   let value = "All";
@@ -267,11 +269,11 @@ $(".photo").on("dblclick", (e) => {
 });
 
 $("#favourite").on("click", () => {
-  $(".favourites").html("");
+  $(".favourites").html("<h1 class='massege title'> The image can be delete to your favorites by double-clicking on it </h1>");
+  $(".favourites").append(`<div class='photos'></div>`);
   array.forEach(function (element, index) {
-    $(".favourites").append(`<img src=${element} >`);
-    $(".favourites img").addClass("item");
-  });
+    $(".photos").append(`<img src=${element} class="item" >`)    
+  })
 });
 
 //localStorage.removeItem("arrayFav")
@@ -287,4 +289,9 @@ $(".favourites").on("dblclick", (e) => {
   let num = array.indexOf(a);
   array.splice(num, 1);
   localStorage.setItem("arrayFav", JSON.stringify(array));
+  $(".favourites").html("<h1 class='massege title'> The image can be delete to your favorites by double-clicking on it </h1>");
+  $(".favourites").append(`<div class='photos'></div>`);
+  array.forEach(function (element, index) {
+    $(".photos").append(`<img src=${element} class="item" >`)    
+  })
 });
