@@ -73,15 +73,12 @@ $("#add").on("click", () => {
   console.log(nameAlbumNew);
   // if ($("#Cat1").checked) {
   //   nameAlbumNew = "Cat";
-  //   console.log(1);
   // }
   // if ($("#Bird1").checked) {
   //   nameAlbumNew = "Bird";
-  //   console.log(2);
   // }
   // if ($("#Flower1").checked) {
   //   nameAlbumNew = "Flower";
-  //   console.log(3);
   // }
   $("#thank").show();
   const urlPhoto = $("#urlImage").val();
@@ -247,6 +244,7 @@ $("#edit").on("click", () => {
   $(".editPhoto").show();
   $("#thank").hide();
   $("#urlImage").val("");
+  $("input[type='radio']").prop("checked",false);
 });
 
 const array = JSON.parse(localStorage.getItem("arrayFav")) || [];
