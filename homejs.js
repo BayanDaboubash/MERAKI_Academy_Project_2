@@ -5,16 +5,16 @@ $(".editPhoto").hide();
 $("#thank").hide();
 $("#showPhotoBig").hide();
 $("#all").css({
-  color: "orange",
+  "color": "orange",
 });
 $("#album").css({
-  color: "rgba(158, 153, 153, 0.904)",
+  "color": "rgba(158, 153, 153, 0.904)",
 });
 $("#favourite").css({
-  color: "rgba(158, 153, 153, 0.904)",
+  "color": "rgba(158, 153, 153, 0.904)",
 });
 $("#edit").css({
-  color: "rgba(158, 153, 153, 0.904)",
+  "color": "rgba(158, 153, 153, 0.904)",
 });
 
 const photoArray = JSON.parse(localStorage.getItem("photoArray")) || [
@@ -221,16 +221,16 @@ $("#all").on("click", () => {
   $("#thank").hide();
   $("#showPhotoBig").hide();
   $("#all").css({
-    color: "orange",
+    "color": "orange",
   });
   $("#album").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#favourite").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#edit").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
 });
 
@@ -243,16 +243,29 @@ $("#album").on("click", () => {
   $(".item").show();
   $("#showPhotoBig").hide();
   $("#all").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#album").css({
-    color: "orange",
+    "color": "orange",
   });
   $("#favourite").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#edit").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $(".item").show("1000");
+  $("#All").css({
+    "background-color": "orange",
+  });
+  $("#Cat").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Flower").css({
+    "background-color": "rgb(238, 238, 238)",
+  });
+  $("#Bird").css({
+    "background-color": "rgb(238, 238, 238)",
   });
 });
 
@@ -264,16 +277,16 @@ $("#favourite").on("click", () => {
   $("#showPhotoBig").hide();
   $("#thank").hide();
   $("#all").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#album").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#favourite").css({
-    color: "orange",
+    "color": "orange",
   });
   $("#edit").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
 });
 
@@ -287,16 +300,16 @@ $("#edit").on("click", () => {
   $("#urlImage").val("");
   $("input[type='radio']").prop("checked", false);
   $("#all").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#album").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#favourite").css({
-    color: "rgba(158, 153, 153, 0.904)",
+    "color": "rgba(158, 153, 153, 0.904)",
   });
   $("#edit").css({
-    color: "orange",
+    "color": "orange",
   });
 });
 
