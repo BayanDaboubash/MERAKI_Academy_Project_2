@@ -3,6 +3,18 @@ $(".albums").hide();
 $(".favourites").hide();
 $(".editPhoto").hide();
 $("#thank").hide();
+$("#all").css({
+  "color": "orange",
+});
+$("#album").css({
+  "color": "rgba(158, 153, 153, 0.904)",
+});
+$("#favourite").css({
+  "color": "rgba(158, 153, 153, 0.904)",
+});
+$("#edit").css({
+  "color": "rgba(158, 153, 153, 0.904)",
+});
 
 const photoArray = JSON.parse(localStorage.getItem("photoArray")) || [
   "src='./1.jpg' class='item Cat'",
@@ -206,6 +218,18 @@ $("#all").on("click", () => {
   $(".favourites").hide();
   $(".editPhoto").hide();
   $("#thank").hide();
+  $("#all").css({
+    "color": "orange",
+  });
+  $("#album").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#favourite").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#edit").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
 });
 
 $("#album").on("click", () => {
@@ -215,17 +239,17 @@ $("#album").on("click", () => {
   $(".editPhoto").hide();
   $("#thank").hide();
   $(".item").show();
-  $("#All").css({
-    "background-color": "orange",
+  $("#all").css({
+    "color": "rgba(158, 153, 153, 0.904)",
   });
-  $("#Cat").css({
-    "background-color": "rgb(238, 238, 238)",
+  $("#album").css({
+    "color": "orange",
   });
-  $("#Flower").css({
-    "background-color": "rgb(238, 238, 238)",
+  $("#favourite").css({
+    "color": "rgba(158, 153, 153, 0.904)",
   });
-  $("#Bird").css({
-    "background-color": "rgb(238, 238, 238)",
+  $("#edit").css({
+    "color": "rgba(158, 153, 153, 0.904)",
   });
 });
 
@@ -235,6 +259,18 @@ $("#favourite").on("click", () => {
   $(".favourites").show();
   $(".editPhoto").hide();
   $("#thank").hide();
+  $("#all").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#album").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#favourite").css({
+    "color": "orange",
+  });
+  $("#edit").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
 });
 
 $("#edit").on("click", () => {
@@ -245,6 +281,18 @@ $("#edit").on("click", () => {
   $("#thank").hide();
   $("#urlImage").val("");
   $("input[type='radio']").prop("checked",false);
+  $("#all").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#album").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#favourite").css({
+    "color": "rgba(158, 153, 153, 0.904)",
+  });
+  $("#edit").css({
+    "color": "orange",
+  });
 });
 
 const array = JSON.parse(localStorage.getItem("arrayFav")) || [];

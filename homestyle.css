@@ -102,6 +102,9 @@ section>ul>li{
   border-radius: 50px;
 }
 
+input:focus{
+  outline: none;
+}
 
 .photo{
   display: flex;
@@ -198,10 +201,10 @@ button{
 }
 
 .big{
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   border-radius: 50px;
-  margin-top: 10%;
+  margin-top: 5%;
 
 }
 
