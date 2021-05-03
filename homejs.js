@@ -321,7 +321,7 @@ $("#favourite").on("click", () => {
   );
   $(".favourites").append(`<div class='photos'></div>`);
   array.forEach(function (element, index) {
-    $(".photos").append(`<img src=${element} class="item" >`);
+    $(".photos").append(`<img src=${element} class="item" title="double click to delete from favorite" >`);
   });
 });
 
@@ -329,7 +329,7 @@ $("#favourite").on("click", () => {
 $("#album").on("click", () => {
   $(".photo").html("");
   photoArray.forEach(function (element, index) {
-    $(".photo").append(`<img ${element} >`);
+    $(".photo").append(`<div id="${index}" title='double click to add to favorite'> <img ${element} title='double click to add to favorite'> </div>`);
   });
 });
 
@@ -391,3 +391,5 @@ $("#level5 div").on("click", (e) => {
   let a = e.target.src;
   $("#showPhotoBig").append(`<img src=${a} class="big" >`);
 });
+
+{/* <button style={background:url('heartBlack.png'); width:10px;} id='like${index}'> </button> */}

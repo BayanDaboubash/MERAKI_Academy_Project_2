@@ -14,12 +14,13 @@ body {
 }
 
 .home {
+  margin-top: 2rem;
   margin-left: 20%;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid transparent;
   width: 60vw;
-  height: 90vh;
+  height: 80vh;
 }
 
 .swiper-container {
@@ -113,6 +114,7 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 img {
   width: 150px;
@@ -219,4 +221,11 @@ button {
 
 label {
   margin: 20px;
+}
+
+
+.item:hover {
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
 }
